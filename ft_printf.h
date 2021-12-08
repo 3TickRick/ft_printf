@@ -1,7 +1,3 @@
-// • content: The data contained in the element.
-// The void * allows to store any kind of data.
-// • next: The next element’s address or NULL if it’s the last element.
-
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
 
