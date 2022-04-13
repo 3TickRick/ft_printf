@@ -1,11 +1,23 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        ::::::::            */
+/*   ft_hexi_base.c                                     :+:    :+:            */
+/*                                                     +:+                    */
+/*   By: rbrune <rbrune@student.42.fr>                +#+                     */
+/*                                                   +#+                      */
+/*   Created: 2022/04/08 11:17:12 by rbrune        #+#    #+#                 */
+/*   Updated: 2022/04/08 11:20:54 by rbrune        ########   odam.nl         */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "ft_printf.h"
 
 static void	ft_hex_print(unsigned int n, unsigned int base, int *counter)
 {
-	const char	*HEX = "0123456789ABCDEF";
+	const char	*hex = "0123456789ABCDEF";
 
 	if (n < base)
-		*counter += ft_putchar(HEX[n % base]);
+		*counter += ft_putchar(hex[n % base]);
 	else
 	{
 		ft_hex_print(n / base, base, counter);
